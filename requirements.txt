@@ -1,0 +1,7 @@
+python-dotenv
+Pillow
+streamlit
+streamlit-echarts
+streamlit-extras
+streamlit-toggle-switch
+faker

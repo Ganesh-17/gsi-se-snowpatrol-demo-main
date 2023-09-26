@@ -1,0 +1,4 @@
+config/creds_clakkad.json
+.DS_Store
+snowsql_rt.log
+snowsql_rt.log_bootstrap
