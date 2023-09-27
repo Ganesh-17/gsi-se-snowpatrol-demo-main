@@ -5,4 +5,4 @@ streamlit-echarts
 streamlit-extras
 streamlit-toggle-switch
 faker
-snowflake-snowpark-python==1.6.1
+snowflake-snowpark-python=1.6.1
