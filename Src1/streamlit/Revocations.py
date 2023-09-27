@@ -155,7 +155,7 @@ def build_UI():
                     elif(app_id==4):
                         k=8
                     cutoff_days = st.text_input("Cutoff Days",30)
-                    # probability_no_login_revocation_threshold=st.text_input("Probability Threshold",0.5)
+                    probability_no_login_revocation_threshold=st.text_input("Probability Threshold",0.5)
                     probability_no_login_revocation_threshold=0.5
                     st.write("")
                     with st.expander("**Pull recommendations from an older run:**"):                            
@@ -168,7 +168,7 @@ def build_UI():
                     with st.expander("**Retrain & get fresh recommendations:**"):
                         include_dept = st.selectbox(
                             label="Select Department",
-                            options=["All","Account","Operations", "Delivery","Management", "general","Innovations","Line Of Business","Sales & Marketing","Sales"],  # Replace with your department options
+                            options=["All","Account","Operations", "Delivery","Management", "General","Innovations","Line Of Business","Sales & Marketing","Sales"],  # Replace with your department options
                             index=0  # Set the default selected department
                         )
                         include_div = st.selectbox(
@@ -710,8 +710,8 @@ def build_UI():
 
                                                 # Create the first pie chart in the first column
                                             
-                                                fig_savings_1 = go.Figure(data=go.Pie(values=[hi, e],
-                                                                                    labels=['Cost of Inactive Licenses', 'Cost of active Licences'], hole=0.4))
+                                                fig_savings_1 = go.Figure(data=go.Pie(values=[active,_revocable],
+                                                                                    labels=['Active Users', 'Inactive Users'], hole=0.4))
 
                                                 fig_savings_1.update_traces(hoverinfo='label+value',
                                                                             textinfo='percent', textfont_size=20,
