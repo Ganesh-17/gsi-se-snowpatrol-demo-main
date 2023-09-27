@@ -185,6 +185,7 @@ def build_UI():
                     if get_older_recommendations | generate_new_recommendations:
 
                                 response={'status':''}
+                                
 
                                 if get_older_recommendations:
                                     response = {"status": "SUCCESS"}
