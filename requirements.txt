@@ -1,5 +1,5 @@
 snowflake_connector_python
-snowflake-snowpark-python
+snowflake_snowpark_python
 pandas
 streamlit
 streamlit_option_menu
@@ -14,3 +14,4 @@ typing
 toml
 plotly
 pillow
+
