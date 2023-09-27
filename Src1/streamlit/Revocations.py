@@ -186,7 +186,6 @@ def build_UI():
 
                                 response={'status':''}
                                 
-
                                 if get_older_recommendations:
                                     response = {"status": "SUCCESS"}
                                     recommendations_df = runs_df[runs_df.RUN_ID == run_id]
