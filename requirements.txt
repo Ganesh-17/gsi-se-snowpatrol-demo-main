@@ -6,3 +6,4 @@ streamlit-extras
 streamlit-toggle-switch
 faker
 snowflake-snowpark-python=1.6.1
+snowflake-connector-python==3.1.0
